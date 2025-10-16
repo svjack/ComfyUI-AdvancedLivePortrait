@@ -1,8 +1,8 @@
 {
   "id": "d52dfc17-10a4-446b-aaf0-5e5a6c51b40c",
   "revision": 0,
-  "last_node_id": 34,
-  "last_link_id": 40,
+  "last_node_id": 35,
+  "last_link_id": 41,
   "nodes": [
     {
       "id": 20,
@@ -40,38 +40,9 @@
         "Node name for S&R": "LoadImage"
       },
       "widgets_values": [
-        "narrow_glasses_000013_00001_.png",
+        "narrow_glasses_000005_00001_.png",
         "image"
       ]
-    },
-    {
-      "id": 34,
-      "type": "PreviewImage",
-      "pos": [
-        1624.8276189543012,
-        396.8955934040245
-      ],
-      "size": [
-        140,
-        246
-      ],
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 40
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.65",
-        "Node name for S&R": "PreviewImage"
-      },
-      "widgets_values": []
     },
     {
       "id": 19,
@@ -109,8 +80,67 @@
         "Node name for S&R": "LoadImage"
       },
       "widgets_values": [
-        "image - 2025-10-16T093510.348.jpg",
+        "image - 2025-10-16T094644.485.jpg",
         "image"
+      ]
+    },
+    {
+      "id": 34,
+      "type": "PreviewImage",
+      "pos": [
+        1640.5695441544563,
+        313.68873567546086
+      ],
+      "size": [
+        232.95170051007176,
+        321.71075691664464
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 40
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.65",
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 35,
+      "type": "SaveImage",
+      "pos": [
+        1614.515444109339,
+        721.4405786302221
+      ],
+      "size": [
+        270,
+        270
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 41
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.65"
+      },
+      "widgets_values": [
+        "ComfyUI"
       ]
     },
     {
@@ -159,7 +189,8 @@
           "type": "IMAGE",
           "slot_index": 0,
           "links": [
-            40
+            40,
+            41
           ]
         },
         {
@@ -192,7 +223,7 @@
         0,
         0,
         1,
-        0.35,
+        0.45,
         "OnlyRotation",
         2.3
       ]
@@ -222,6 +253,14 @@
       34,
       0,
       "IMAGE"
+    ],
+    [
+      41,
+      21,
+      0,
+      35,
+      0,
+      "IMAGE"
     ]
   ],
   "groups": [
@@ -242,10 +281,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1.3310000000000062,
+      "scale": 1.2100000000000062,
       "offset": [
-        -915.3290572064616,
-        -366.773623632919
+        -799.2585214111251,
+        -411.1423020915325
       ]
     },
     "frontendVersion": "1.28.6",
