@@ -5,142 +5,6 @@
   "last_link_id": 15,
   "nodes": [
     {
-      "id": 10,
-      "type": "VHS_VideoCombine",
-      "pos": [
-        2275.4823796799224,
-        255.32024078052777
-      ],
-      "size": [
-        261.79998779296875,
-        659.358888390946
-      ],
-      "flags": {},
-      "order": 8,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 8
-        },
-        {
-          "name": "audio",
-          "shape": 7,
-          "type": "AUDIO",
-          "link": null
-        },
-        {
-          "name": "meta_batch",
-          "shape": 7,
-          "type": "VHS_BatchManager",
-          "link": null
-        },
-        {
-          "name": "vae",
-          "shape": 7,
-          "type": "VAE",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "Filenames",
-          "type": "VHS_FILENAMES",
-          "links": null
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-videohelpersuite",
-        "ver": "08e8df15db24da292d4b7f943c460dc2ab442b24",
-        "Node name for S&R": "VHS_VideoCombine"
-      },
-      "widgets_values": {
-        "frame_rate": 15,
-        "loop_count": 0,
-        "filename_prefix": "AdvancedLivePortrait",
-        "format": "video/h264-mp4",
-        "pix_fmt": "yuv420p",
-        "crf": 19,
-        "save_metadata": true,
-        "trim_to_audio": false,
-        "pingpong": false,
-        "save_output": true,
-        "videopreview": {
-          "hidden": false,
-          "paused": false,
-          "params": {
-            "filename": "AdvancedLivePortrait_00022.mp4",
-            "subfolder": "",
-            "type": "output",
-            "format": "video/h264-mp4",
-            "frame_rate": 15,
-            "workflow": "AdvancedLivePortrait_00022.png",
-            "fullpath": "/home/featurize/ComfyUI/output/AdvancedLivePortrait_00022.mp4"
-          }
-        }
-      }
-    },
-    {
-      "id": 7,
-      "type": "AdvancedLivePortrait",
-      "pos": [
-        1952.640911096776,
-        253.66737025824708
-      ],
-      "size": [
-        235.1999969482422,
-        523.0364379882812
-      ],
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "src_images",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": null
-        },
-        {
-          "name": "motion_link",
-          "shape": 7,
-          "type": "EDITOR_LINK",
-          "link": 15
-        },
-        {
-          "name": "driving_images",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "slot_index": 0,
-          "links": [
-            8
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-advancedliveportrait",
-        "ver": "3bba732915e22f18af0d221b9c5c282990181f1b",
-        "Node name for S&R": "AdvancedLivePortrait"
-      },
-      "widgets_values": [
-        0,
-        0,
-        1.7000000000000002,
-        true,
-        false,
-        true,
-        "1 = 5:5\n2 = 10:5\n3 = 5:15\n0 = 3:5\n"
-      ]
-    },
-    {
       "id": 16,
       "type": "Note",
       "pos": [
@@ -216,47 +80,6 @@
       "bgcolor": "#653"
     },
     {
-      "id": 3,
-      "type": "LoadImage",
-      "pos": [
-        861.4056123455601,
-        251.6482608670411
-      ],
-      "size": [
-        223.20395091844193,
-        314
-      ],
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "slot_index": 0,
-          "links": [
-            11
-          ]
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "slot_index": 1,
-          "links": null
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.65",
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "ComfyUI_00097_ (1).png",
-        "image"
-      ]
-    },
-    {
       "id": 19,
       "type": "ExpressionEditor",
       "pos": [
@@ -327,7 +150,7 @@
         0,
         0,
         0,
-        0,
+        1,
         10,
         0,
         0,
@@ -338,6 +161,142 @@
         1,
         "OnlyExpression",
         1.7
+      ]
+    },
+    {
+      "id": 10,
+      "type": "VHS_VideoCombine",
+      "pos": [
+        2259.0547954860904,
+        280.3055852808279
+      ],
+      "size": [
+        261.79998779296875,
+        659.358888390946
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 8
+        },
+        {
+          "name": "audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "meta_batch",
+          "shape": 7,
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Filenames",
+          "type": "VHS_FILENAMES",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-videohelpersuite",
+        "ver": "08e8df15db24da292d4b7f943c460dc2ab442b24",
+        "Node name for S&R": "VHS_VideoCombine"
+      },
+      "widgets_values": {
+        "frame_rate": 15,
+        "loop_count": 0,
+        "filename_prefix": "AdvancedLivePortrait",
+        "format": "video/h264-mp4",
+        "pix_fmt": "yuv420p",
+        "crf": 19,
+        "save_metadata": true,
+        "trim_to_audio": false,
+        "pingpong": false,
+        "save_output": true,
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "AdvancedLivePortrait_00025.mp4",
+            "subfolder": "",
+            "type": "output",
+            "format": "video/h264-mp4",
+            "frame_rate": 15,
+            "workflow": "AdvancedLivePortrait_00025.png",
+            "fullpath": "/home/featurize/ComfyUI/output/AdvancedLivePortrait_00025.mp4"
+          }
+        }
+      }
+    },
+    {
+      "id": 7,
+      "type": "AdvancedLivePortrait",
+      "pos": [
+        1952.640911096776,
+        253.66737025824708
+      ],
+      "size": [
+        235.1999969482422,
+        523.0364379882812
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "src_images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "motion_link",
+          "shape": 7,
+          "type": "EDITOR_LINK",
+          "link": 15
+        },
+        {
+          "name": "driving_images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            8
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-advancedliveportrait",
+        "ver": "3bba732915e22f18af0d221b9c5c282990181f1b",
+        "Node name for S&R": "AdvancedLivePortrait"
+      },
+      "widgets_values": [
+        0,
+        0,
+        1.7000000000000002,
+        true,
+        false,
+        true,
+        "1 = 5:5\n2 = 10:5\n3 = 5:15\n0 = 3:5\n"
       ]
     },
     {
@@ -406,6 +365,9 @@
       },
       "widgets_values": [
         0,
+        5,
+        0,
+        -1,
         0,
         0,
         0,
@@ -413,10 +375,7 @@
         0,
         0,
         0,
-        0,
-        0,
-        0,
-        0.7,
+        0.3,
         1,
         1,
         "OnlyExpression",
@@ -489,14 +448,14 @@
         "Node name for S&R": "ExpressionEditor"
       },
       "widgets_values": [
+        7,
+        0,
+        -1,
+        0,
+        0,
         0,
         0,
         -10,
-        0,
-        0,
-        0,
-        -10,
-        0,
         0,
         0,
         0,
@@ -505,6 +464,47 @@
         1,
         "OnlyExpression",
         1.7
+      ]
+    },
+    {
+      "id": 3,
+      "type": "LoadImage",
+      "pos": [
+        861.4056123455601,
+        251.6482608670411
+      ],
+      "size": [
+        223.20395091844193,
+        314
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            11
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "slot_index": 1,
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.65",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "scene_change_000070_00001_.png",
+        "image"
       ]
     }
   ],
@@ -554,10 +554,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1.1000000000000025,
+      "scale": 1.1000000000000028,
       "offset": [
-        -168.42925211983277,
-        -250.84411860139008
+        -1522.7251722961582,
+        -383.8881398159068
       ]
     },
     "frontendVersion": "1.28.6",
