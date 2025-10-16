@@ -5,174 +5,6 @@
   "last_link_id": 15,
   "nodes": [
     {
-      "id": 15,
-      "type": "ExpressionEditor",
-      "pos": [
-        1145.3440710455818,
-        241.81848736119494
-      ],
-      "size": [
-        210,
-        690
-      ],
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "src_image",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": 11
-        },
-        {
-          "name": "motion_link",
-          "shape": 7,
-          "type": "EDITOR_LINK",
-          "link": null
-        },
-        {
-          "name": "sample_image",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": null
-        },
-        {
-          "name": "add_exp",
-          "shape": 7,
-          "type": "EXP_DATA",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "links": null
-        },
-        {
-          "name": "motion_link",
-          "type": "EDITOR_LINK",
-          "slot_index": 1,
-          "links": [
-            12
-          ]
-        },
-        {
-          "name": "save_exp",
-          "type": "EXP_DATA",
-          "links": null
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-advancedliveportrait",
-        "ver": "3bba732915e22f18af0d221b9c5c282990181f1b",
-        "Node name for S&R": "ExpressionEditor"
-      },
-      "widgets_values": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        -10,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        "OnlyExpression",
-        1.7
-      ]
-    },
-    {
-      "id": 19,
-      "type": "ExpressionEditor",
-      "pos": [
-        1412.3209033807432,
-        246.33799390576948
-      ],
-      "size": [
-        210,
-        690
-      ],
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "src_image",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": null
-        },
-        {
-          "name": "motion_link",
-          "shape": 7,
-          "type": "EDITOR_LINK",
-          "link": 12
-        },
-        {
-          "name": "sample_image",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": null
-        },
-        {
-          "name": "add_exp",
-          "shape": 7,
-          "type": "EXP_DATA",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "links": null
-        },
-        {
-          "name": "motion_link",
-          "type": "EDITOR_LINK",
-          "slot_index": 1,
-          "links": [
-            14
-          ]
-        },
-        {
-          "name": "save_exp",
-          "type": "EXP_DATA",
-          "links": null
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-advancedliveportrait",
-        "ver": "3bba732915e22f18af0d221b9c5c282990181f1b",
-        "Node name for S&R": "ExpressionEditor"
-      },
-      "widgets_values": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        10,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        "OnlyExpression",
-        1.7
-      ]
-    },
-    {
       "id": 10,
       "type": "VHS_VideoCombine",
       "pos": [
@@ -238,13 +70,13 @@
           "hidden": false,
           "paused": false,
           "params": {
-            "filename": "AdvancedLivePortrait_00014.mp4",
+            "filename": "AdvancedLivePortrait_00022.mp4",
             "subfolder": "",
             "type": "output",
             "format": "video/h264-mp4",
             "frame_rate": 15,
-            "workflow": "AdvancedLivePortrait_00014.png",
-            "fullpath": "/home/featurize/ComfyUI/output/AdvancedLivePortrait_00014.mp4"
+            "workflow": "AdvancedLivePortrait_00022.png",
+            "fullpath": "/home/featurize/ComfyUI/output/AdvancedLivePortrait_00022.mp4"
           }
         }
       }
@@ -306,89 +138,6 @@
         false,
         true,
         "1 = 5:5\n2 = 10:5\n3 = 5:15\n0 = 3:5\n"
-      ]
-    },
-    {
-      "id": 20,
-      "type": "ExpressionEditor",
-      "pos": [
-        1654.3184989779188,
-        261.20847189680075
-      ],
-      "size": [
-        270,
-        690
-      ],
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "src_image",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": null
-        },
-        {
-          "name": "motion_link",
-          "shape": 7,
-          "type": "EDITOR_LINK",
-          "link": 14
-        },
-        {
-          "name": "sample_image",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": null
-        },
-        {
-          "name": "add_exp",
-          "shape": 7,
-          "type": "EXP_DATA",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "links": null
-        },
-        {
-          "name": "motion_link",
-          "type": "EDITOR_LINK",
-          "links": [
-            15
-          ]
-        },
-        {
-          "name": "save_exp",
-          "type": "EXP_DATA",
-          "links": null
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-advancedliveportrait",
-        "ver": "3bba732915e22f18af0d221b9c5c282990181f1b",
-        "Node name for S&R": "ExpressionEditor"
-      },
-      "widgets_values": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0.7,
-        1,
-        1,
-        "OnlyExpression",
-        1.7
       ]
     },
     {
@@ -506,6 +255,257 @@
         "ComfyUI_00097_ (1).png",
         "image"
       ]
+    },
+    {
+      "id": 19,
+      "type": "ExpressionEditor",
+      "pos": [
+        1412.3209033807432,
+        246.33799390576948
+      ],
+      "size": [
+        210,
+        690
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "src_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "motion_link",
+          "shape": 7,
+          "type": "EDITOR_LINK",
+          "link": 12
+        },
+        {
+          "name": "sample_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "add_exp",
+          "shape": 7,
+          "type": "EXP_DATA",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "name": "motion_link",
+          "type": "EDITOR_LINK",
+          "slot_index": 1,
+          "links": [
+            14
+          ]
+        },
+        {
+          "name": "save_exp",
+          "type": "EXP_DATA",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-advancedliveportrait",
+        "ver": "3bba732915e22f18af0d221b9c5c282990181f1b",
+        "Node name for S&R": "ExpressionEditor"
+      },
+      "widgets_values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        "OnlyExpression",
+        1.7
+      ]
+    },
+    {
+      "id": 20,
+      "type": "ExpressionEditor",
+      "pos": [
+        1654.3184989779188,
+        261.20847189680075
+      ],
+      "size": [
+        270,
+        690
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "src_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "motion_link",
+          "shape": 7,
+          "type": "EDITOR_LINK",
+          "link": 14
+        },
+        {
+          "name": "sample_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "add_exp",
+          "shape": 7,
+          "type": "EXP_DATA",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "name": "motion_link",
+          "type": "EDITOR_LINK",
+          "links": [
+            15
+          ]
+        },
+        {
+          "name": "save_exp",
+          "type": "EXP_DATA",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-advancedliveportrait",
+        "ver": "3bba732915e22f18af0d221b9c5c282990181f1b",
+        "Node name for S&R": "ExpressionEditor"
+      },
+      "widgets_values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0.7,
+        1,
+        1,
+        "OnlyExpression",
+        1.7
+      ]
+    },
+    {
+      "id": 15,
+      "type": "ExpressionEditor",
+      "pos": [
+        1145.3440710455818,
+        241.81848736119494
+      ],
+      "size": [
+        210,
+        690
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "src_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 11
+        },
+        {
+          "name": "motion_link",
+          "shape": 7,
+          "type": "EDITOR_LINK",
+          "link": null
+        },
+        {
+          "name": "sample_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "add_exp",
+          "shape": 7,
+          "type": "EXP_DATA",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "name": "motion_link",
+          "type": "EDITOR_LINK",
+          "slot_index": 1,
+          "links": [
+            12
+          ]
+        },
+        {
+          "name": "save_exp",
+          "type": "EXP_DATA",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-advancedliveportrait",
+        "ver": "3bba732915e22f18af0d221b9c5c282990181f1b",
+        "Node name for S&R": "ExpressionEditor"
+      },
+      "widgets_values": [
+        0,
+        0,
+        -10,
+        0,
+        0,
+        0,
+        -10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        "OnlyExpression",
+        1.7
+      ]
     }
   ],
   "links": [
@@ -554,10 +554,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1.2100000000000006,
+      "scale": 1.1000000000000025,
       "offset": [
-        -1057.1171010068697,
-        -373.45450126342905
+        -168.42925211983277,
+        -250.84411860139008
       ]
     },
     "frontendVersion": "1.28.6",
